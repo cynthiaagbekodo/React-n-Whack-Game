@@ -38,35 +38,6 @@ void setup() {
   pinMode(ledYellow_pin, OUTPUT);
   pinMode(ledRed_pin, OUTPUT);
 
-  
-//  pinMode(ledintur, OUTPUT);
-//  pinMode(interruptPin, INPUT_PULLUP);
-//  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
-
-//  int OCR_2sec = 31249; 
-//  int OCR_4sec = 62499;            
-//  int OCR_10sec = 156249;
-//  /* Configure interrupt on Timer1 */
-//  cli();            // disable global interrupts before configuring interrupt 
-//  TCCR1A = 0;       // set TCCR1A register to 00000000
-//  TCCR1B = 0;       // set TCCR1B register to 00000000
-//  OCR1A = 15624;   // set compare match register
-//  /*Notice: (x+1)*1/16e6*1024 = desired seconds*/
-//  TCCR1B |= (1 << WGM12);             // Set WGM12 bit to 1, turns on CTC mode:
-//  TCCR1B |= (1 << CS12)|(1 << CS10);  // Set CS10 and CS12 bits to 1
-//  /* Notice that When CS12=1, CS11=0 and CS12=1, pre-scaler is 1024 */
-//  TIMSK1 |= (1 << OCIE1A); // enable timer compare interrupt:
-//  sei(); // enable global interrupts after configured interrupt
-  
-}
-
-//ISR(TIMER1_COMPA_vect){ 
-//  digitalWrite(ledintur, !digitalRead(ledintur)); 
-////  lcd.clear();
-////  lcd.setCursor(0, 0);
-////  lcd.print("TimeOut!");
-//}
-
 /*******************************************************************************/
 void loop() {     
 //  Game Selection: Uncomment to pick a mode
@@ -76,7 +47,6 @@ void loop() {
 
 /*******************************************************************************/
 void reactiontimer() {
-  //Code for Part 1
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Reaction Timer");
@@ -125,7 +95,6 @@ void reactiontimer() {
 
 /*******************************************************************************/
 void whackamole() {
-  //Code for Part 2
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Whack a Mole");

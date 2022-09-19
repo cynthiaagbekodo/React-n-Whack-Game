@@ -8,7 +8,8 @@ The code begins by mapping LED pins to the Arduino port they are connected to in
 This project relied on an infrared remote to record player responce. As such, to make this tool functional, I first had to determine the signal immited by each button I intended to use such that they could be comfigured in the code accordingly and then used to compare the player's responce against the correct answer. The code for can be ssen in the file _find_IR_values.ino_; this portion was rather simple.
 
 ### _Reaction Timer_
-On start up, this mode presents itself by printing "Reaction Timer" to the LCD prompt, then waits 2-4 seconds before turning on the first LED. 
+On start up, this mode presents itself by printing "Reaction Timer" to the LCD prompt, then waits 2-4 seconds before turning on the LED and simultaniously taking note of the current time. The player then has 10 seconds to react by pressing the '0' button on the remote. If the player succeeds, the point in time at which the button is pressed with be noted and the difference between the two variables will be printed to the LCD prompt; this was the player's reaction time. If the player takes too long or presses the incorrect button, the prompt will display "Time Out!" or "Wrong Button!", respectfully. In all cases, the player is given a few seconds to view this feedback before the game begins again.
 
 ### _Whack-a-Mole_
+
 

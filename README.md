@@ -5,7 +5,7 @@ Reaction Timer: https://1drv.ms/v/s!Ake-3pFxkd39gZgg_K6KJhO-1xgJLg?e=OVzSmY
 
 Whack a Mole: https://1drv.ms/v/s!Ake-3pFxkd39gZghasRtrVeI1k7ChA?e=ZtNovy 
 
-This project was completed as part of the _Embedded System Design_ course during my fourth year of university and had for goal to provide students the opportunity to apply theory acquired from lectures. This build was a mix of basic circuit connections and Arduino code to simulate two mini-games: a reaction timer and whack-a-mole. See the file _circuit_visual.jpg_ and _(circuit schematic TBA)_ for details on the circuit.
+This project was completed as part of my fourth year _Embedded System Design_ course and had for goal to provide students the opportunity to apply theory acquired from lectures. This build was a mix of basic circuit connections and Arduino code to simulate two mini-games: a reaction timer and whack-a-mole. See the file _circuit_visual.jpg_ and _(circuit schematic TBA)_ for details on the circuit.
 
 The code begins by mapping LED pins to the Arduino port they are connected to in the circuit and initiating necessary variables for tracking time past. In the _void setup()_ function, port associated to the LEDs are set as outputs and the IR remote's receiving statues is set to TRUE. The _void loop()_ function is used a segway to run either the _reactiontimer()_ function of the _whackamole()_ function which launches each game respectfully. The following sections will briefly discuss the IR remote configuration and the functioning of both games.
 
